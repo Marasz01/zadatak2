@@ -1,20 +1,20 @@
 function login() {
-  const email = document.getElementById("email").value;
-  const password = document.getElementById("password").value;
+  let email = document.getElementById("email").value;
+  let password = document.getElementById("password").value;
 
   if (!email || !password) {
     alert("Molimo unesite točnu mail adresu i loziku.");
     return;
   }
 
-  const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+  let emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
   if (!emailPattern.test(email)) {
     alert("Molimo unesite pravilnu email adresu.");
     return;
   }
 
-  const validEmail = "test@example.com";
-  const validPassword = "password123";
+  let validEmail = "test@example.com";
+  let validPassword = "password123";
 
   if (email === validEmail && password === validPassword) {
     alert("Login uspjesan!");
