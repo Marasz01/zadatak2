@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Početna Stranica</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+
+<body onload="postaviTrenutnuGodinu()">
+    <header>
+        <h1>Dobrodošli</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="homepage.html">Početna</a></li>
+            <li><a href="#">O Nama</a></li>
+            <li><a href="#">Usluge</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="uvod">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam illum eos provident, nostrum maiores
+                perspiciatis, minus aperiam inventore obcaecati eveniet nam debitis illo laboriosam ducimus minima
+                tempora beatae blanditiis dicta..</p>
+        </section>
+
+        <article>
+            <h2>Audio</h2>
+            <audio controls>
+                <source src="./media/sound/file_example_MP3_5MG.mp3" type="audio/mpeg">
+            </audio>
+        </article>
+
+        <article>
+            <h2>Usporedba Brojeva</h2>
+            <div class="input-group">
+                <label for="broj1">Broj 1:</label>
+                <input type="number" id="broj1">
+            </div>
+            <div class="input-group">
+                <label for="broj2">Broj 2:</label>
+                <input type="number" id="broj2">
+            </div>
+            <button onclick="usporediBrojeve()">Usporedi</button>
+        </article>
+
+        <aside>
+            <h2>Reklama</h2>
+            <p>Ovo je odjeljak za reklame, javite se za suradnju :)</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="trenutna-godina"></span> Moja stranica</p>
+    </footer>
+
+    <script src="script2.js"></script>
+</body>
+
+</html>

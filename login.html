@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Forma</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="avatar">
+            <img src="avatar.png" alt="Avatar">
+        </div>
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" placeholder="Unesite Vaš email">
+            </div>
+            <div class="input-group">
+                <label for="password">Lozinka:</label>
+                <input type="password" id="password" name="password" placeholder="Unesite Vašu lozinku">
+            </div>
+            <button type="button" onclick="login()">Login</button>
+        </form>
+        <button onclick="redirectToRegister()">Register</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
